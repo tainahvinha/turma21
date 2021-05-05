@@ -27,10 +27,13 @@ public class Lista2ex3 {
 			System.out.printf("Sua idade é %d e sua categoria é juvenil",idade);
 		}
 		
-		else {
+		else if (idade>=18 && idade<=25) {
 			System.out.printf("Sua idade é %d e sua categoria é adulto",idade);
 		
-	}
+	   }
+		else {
+			System.out.printf("Não há categoria");
+		}
 
 }
 }
