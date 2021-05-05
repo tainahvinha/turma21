@@ -56,17 +56,23 @@ programa
 			
 	
 		}
+			para (inteiro i = 0; i<3; i++){
+
 			caracter respostaBoletim
 			escreva("\nDeseja imprimir boletim de notas? ")
+			
 			leia(respostaBoletim)
 			 se(respostaBoletim == 's' ou respostaBoletim == 'S'){
 			 
 			     para (inteiro x=0; x<3; x++){
-			      escreva(valorMovimento[x])
+			      escreva("\n",valorMovimento[x])
 			     }
 			     
 			     }senao {
 			 	escreva("FIM")
+				 
+			}
+			
 			 	
 	}	
 }
@@ -81,7 +87,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1516; 
+ * @POSICAO-CURSOR = 1622; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
