@@ -5,7 +5,13 @@
     <fullyQualifiedTypeName name="entidadesPoo.Pessoa"/>
     <fullyQualifiedTypeName name="entidadesPoo.Cliente"/>
     <fullyQualifiedTypeName name="entidadesPoo.Aviao"/>
-    <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
     <fullyQualifiedTypeName name="entidadesPoo.Funcionario"/>
+    <fullyQualifiedTypeName name="classes.Estudante"/>
+    <fullyQualifiedTypeName name="classes.Basico"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
+    <fullyQualifiedTypeName name="classes.Graduacao"/>
+    <fullyQualifiedTypeName name="util.UI"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="classes.Medio"/>
 </qualifiedTypeNameHistroy>

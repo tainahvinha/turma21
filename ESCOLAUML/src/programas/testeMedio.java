@@ -3,13 +3,16 @@ package programas;
 import java.util.Scanner;
 
 import classes.Basico;
-import classes.Estudante;
 import classes.Graduacao;
+import classes.Medio;
 import util.UI;
 
-public class teste {
+public class testeMedio {
 
 	public static void main(String[] args) {
+	
+boolean continua = true;
+
 		Scanner leia = new Scanner (System.in);
 		UI.imprimeDadosEscola();
 					
@@ -21,16 +24,14 @@ public class teste {
 		int matricula = leia.nextInt();
 		System.out.print("Digite o cpf: ");
 		String cpf = leia.next();
-		System.out.print("Digite o dia de aniversário");
-		int dia = leia.nextInt();
 		System.out.print("Digite a nota inicial: ");
 		double nota = leia.nextDouble();
 		
-		Basico aluno1 = new Basico(matricula, cpf, dia);
+		Medio medio1 = new Medio (matricula, cpf);
 		Graduacao grad1 = new Graduacao(matricula, cpf);
-		aluno1.setNome(nome);
-		aluno1.adicionarNota(nota);
-		grad1.adicionarNota(10);
+		medio1.setNome(nome);
+		medio1.adicionarNota(nota);
+		medio1.adicionarNota(0);
 		
 		/*System.out.printf("pontos atuais do aluno %s = %.0f: ", aluno1.getNome(), aluno1.getPontos());
 		System.out.println("\nDigite o dia atual: ");
@@ -39,25 +40,33 @@ public class teste {
 		System.out.printf("PONTOS após método do aluno %s = %.0f ", aluno1.getNome(), aluno1.getPontos());
 		*/
 		
-						
+			do {			
 		char op = ' ';
-		System.out.println("Nota do grad 1: " + grad1.getPontos());
+		System.out.println("Nota do médio 1: " + medio1.getPontos());
 		for (int x=1; x<=3; x++) {
-			
+	
 			System.out.println("Informe o valor: ");
 			nota = leia.nextDouble();
 			System.out.println("Digite 1- adcionar nota ou 2-debitar: ");
 			op = leia.next().charAt(0);
 			if (op == '1') {
-				grad1.adicionarNota(nota);
+				medio1.adicionarNota(nota);
 			} else {
-				grad1.tirarNota(nota);
+				medio1.tirarNota(nota);
 			}
-			System.out.println("Valor atual do bônus: " + grad1.getBonus());
-			System.out.println("Novo saldo de nota de grad 1: " + grad1.getPontos());
-		}
+			System.out.println("Novo saldo de nota de médio 1: " + medio1.getPontos());
 			
+			System.out.println("Deseja continuar? S - sim | N - não");
+			char resposta = leia.next().toUpperCase().charAt(0);
+			if (resposta == 'S') {
+			continua = true;
+			} else {
+			continua = false;
+			}
 	}
+
+	} while (continua);
+}
 
 }
 
