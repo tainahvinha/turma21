@@ -1,13 +1,13 @@
-package CadFunc;
+package classes;
 
 public class Funcionario {
 	
 	private String nome;
 	private String matricula;
-	private int horasTrabalhadas;
-	private double valorHora;
+	protected int horasTrabalhadas;
+	protected double valorHora;
 	
-	
+	//CONSTRUTORES
 	public Funcionario(String nome, String matricula) {
 		super();
 		this.nome = nome;
@@ -23,7 +23,7 @@ public class Funcionario {
 		this.valorHora = valorHora;
 	}
 
-
+//getters e setters
 	public String getNome() {
 		return nome;
 	}
@@ -62,12 +62,14 @@ public class Funcionario {
 	public void setValorHora(double valorHora) {
 		this.valorHora = valorHora;
 	}
-
-			
-	public double mostrarSalario () {
+	
+	// Métodos
+	public double salario(){
+		
 		return (horasTrabalhadas * valorHora);
 	}
-	
-	
 
 }
+
+
+
