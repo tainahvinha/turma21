@@ -1,0 +1,15 @@
+package Utils;
+
+import classes.Administrador;
+import classes.Doacao;
+
+public class Utils {
+	
+	public static void iniciarDoacoes (Administrador adm) {
+		Doacao doacao1 = new Doacao (1111, 400
+				new PessoaFisica("Jonathan Almeira", "Brasil", "M", 1995, 
+						"222.222.222-22", "jonathan", "123"));
+		
+	}
+
+}

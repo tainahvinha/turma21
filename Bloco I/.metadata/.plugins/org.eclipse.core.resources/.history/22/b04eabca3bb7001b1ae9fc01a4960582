@@ -1,0 +1,60 @@
+package programa;
+
+import java.util.Scanner;
+
+import classes.Administrador;
+import classes.Pessoa;
+
+public class teste {
+
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner (System.in);
+		
+		Administrador adm = new Administrador ("Adm", "Brasil", "M", 1989, "admin", "admin");
+		Utils.iniciarDoacoes (adm)
+		System.out.println("==== SEJA BEM VINDO - ONG GIRL POWER ====");
+		System.out.println("\n");
+		System.out.println("\n1- Entrar como ADM\n2 - Entrar\n3-Cadastrar ");
+		char opcao = leia.next().toUpperCase().charAt(0);
+
+		if(opcao == '1') {
+			do {
+				System.out.print("Usuário:");
+				String usuario = leia.next();
+				System.out.print("Senha:");
+				String senha = leia.next();
+			} while (usuario != adm.getUsuario() && senha != adm.getSenha());
+			
+			System.out.println("\n==== SEJA BEM VINDO ADMIN ====");
+			System.out.println("TOTAL DE DOAÇÕES: ");
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

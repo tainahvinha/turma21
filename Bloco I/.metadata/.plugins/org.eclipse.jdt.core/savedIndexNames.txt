@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\taina\Desktop\turma21\.metadata\.plugins\org.eclipse.jdt.core
+3883950653.index
+1786917176.index
+951338140.index
+233012860.index
+827256296.index

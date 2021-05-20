@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Exercicios {
+	
+	public static void main(String[] args) {
+		
+		 Scanner leia = new Scanner(System.in);
+		double raio = 0;
+		double area;
+		double  pi = 3.14159;
+		
+		area = leia.nextDouble();
+		area = pi * Math.pow(raio, 2);
+		 
+	
+		
+		        System.out.println("A=" + area);
+		        System.out.println("Fim de linha");
+		
+		
+		
+		
+		
+	}
+
+}
