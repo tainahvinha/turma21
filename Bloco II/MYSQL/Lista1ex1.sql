@@ -8,7 +8,7 @@ cpf varchar (20) not null,
 matricula int not null,
 salario decimal (5,0) not null,
 primary key (id)
-);
+
 
 insert into tb_funcionario (nome, setor, cpf, matricula, salario) values ("Tainah Vinha", "compras", "222.222.222-22", 22, 5000.00);
 insert into tb_funcionario (nome, setor, cpf, matricula, salario) values ("João Pedro Barbosa", "finanças", "111.111.111-11", 10, 2500.00);
@@ -21,4 +21,3 @@ select * from tb_funcionario where salario < 2000;
 
 
 update tb_funcionario set setor = "vendas" where id = 5
-
